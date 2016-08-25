@@ -7,9 +7,9 @@ class TutorialViews:
         self.request = request
 
     @view_config(route_name='home')
-    def home(request):
+    def home(self):
         return {'name': 'Home View'}
 
     @view_config(route_name='hello')
-    def hello(request):
+    def hello(self):
         return {'name': 'Hello View'}
